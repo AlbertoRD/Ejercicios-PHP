@@ -8,13 +8,18 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <style type="text/css">
+            body{
+                font-family: courier;
+            }
+        </style>
     </head>
     <body>
         <?php
         $altura = 5;
         for($espacios = $altura-1, $asteriscos=1; $asteriscos<=($altura*2)-1;$espacios--, $asteriscos+=2){
             for($i=0; $i<$espacios;$i++){
-                echo "&nbsp;&nbsp;";
+                echo "&nbsp;";
             }
             for($j=$asteriscos; $j!=0;$j--){
                 echo "*";
