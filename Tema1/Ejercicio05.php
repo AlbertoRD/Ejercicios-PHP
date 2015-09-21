@@ -13,6 +13,7 @@ and open the template in the editor.
         <?php
         $x = 144;
         $y = 999;
+        
         echo "X = " . $x . "<br/>";
         echo "Y = " . $y . "<br/>";
         echo "X+Y=" . ($x + $y) . "<br/>";

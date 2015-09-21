@@ -13,7 +13,8 @@ and open the template in the editor.
          <?php
         $pesetas = 500;
         $euros = $pesetas / 166.386;
-        echo "$pesetas pesetas = $euros €";
+        $resultado = number_format($euros, 2);
+        echo "$pesetas pesetas = $resultado €";
         ?>
     </body>
 </html>
