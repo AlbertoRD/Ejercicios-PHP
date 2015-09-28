@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #txtHora{
+                text-align: right;
+            }
+            input[type=number] {
+                -moz-appearance:textfield;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Escribe un programa que dada una hora determinada (horas y minutos), calcule los segundos que
+            faltan para llegar a la medianoche.</h2>
+        <form method="post" action="ej11.php">
+            <label>Introduzca la hora actual:</label>
+            <input type="number" min="0" max="23" id="txtHora" value="0" name="txtHora"/>:
+            <input type="number" id="txtMinutos" min="0" max="59" value="0" name="txtMinutos"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
