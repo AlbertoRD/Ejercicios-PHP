@@ -3,8 +3,8 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $numero =  intval($_POST['txtNumero']);
-$longitud = strlen($numero);
-$ultimo = $numero;
+$ultimo = $numero%10;
+echo "La última cifra de este numero es un $ultimo .";
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
