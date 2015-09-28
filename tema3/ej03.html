@@ -11,13 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h2>Escribe un programa que calcule el volumen de un cono mediante la
-            fórmula V = <sup>1</sup>&frasl;<sub>3</sub>πr<sup>2</sup>h.</h2>
-        <form action="ej09.php" method="post">
-            <label for="txtRadio">Radio:</label>
-            <input type="number" min="0" id="txtRadio" name="txtRadio"/><br/>
-            <label for="txtAltura">Altura:</label>
-            <input type="number" min="0" id="txtAltura" name="txtAltura"/><br/>
+        <h2>Escribe un programa en que dado un número del 1 a 7 escriba el correspondiente nombre del día
+de la semana.</h2>
+        <form method="post" action="ej03.php">
+            <label for="dia">Introduzca un día de la semana (1-7):</label>
+            <input type="number" id="dia" name="dia" min="1" max="7"/>
             <input type="submit" value="Enviar"/>
         </form>
     </body>
