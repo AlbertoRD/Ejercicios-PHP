@@ -47,12 +47,12 @@ and open the template in the editor.
                 echo "<td>$valor</td>";
             }
             echo "</tr></table><br/>";
-            $aux = $aValores[count($aValores) - 1];
+            $aux1 = $aValores[count($aValores) - 1];
 
             for ($i = count($aValores) - 1; $i > 0; $i--) {
                 $aValores[$i] = $aValores[$i - 1];
             }
-            $aValores[0] = $aux;
+            $aValores[0] = $aux1;
 
             echo "Array Rotado:<br/>"
             . "<table><tr>";
