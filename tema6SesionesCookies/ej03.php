@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['usuario'])) {
-    header("Location: ej04.php");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 
@@ -34,10 +30,8 @@ and open the template in the editor.
         }
 
         if (isset($numero)) {
-            //if (($valor + $numero) <= 10000) {
             $valor += $numero;
             $contador++;
-            // } else {
             if ($valor >= 10000) {
                 $media = $valor / $contador;
 

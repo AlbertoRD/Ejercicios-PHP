@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['usuario'])) {
-    header("Location: ej04.php");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <!--

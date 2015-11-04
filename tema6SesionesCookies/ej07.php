@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['usuario'])) {
-    header("Location: ej04.php");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <!--
@@ -21,11 +17,11 @@ and open the template in the editor.
     <?php
     if (!isset($_COOKIE['color'])) {
         $color = "#ffffff";
-        setcookie("color", $color);
+        setcookie("color", $color, time()+ 7 * 24 * 60 * 60);
     } else {
         if (isset($_POST['color'])) {
             $color = $_POST['color'];
-            setcookie("color", $color);
+            setcookie("color", $color,  time()+ 7 * 24 * 60 * 60);
         } else if (isset($_COOKIE['color'])) {
             $color = $_COOKIE['color'];
         }

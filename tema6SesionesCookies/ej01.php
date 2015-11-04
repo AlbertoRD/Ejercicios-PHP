@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['usuario'])) {
-    header("Location: ej04.php");
-    exit;
-}
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -44,6 +38,7 @@ and open the template in the editor.
             } else {
                 $media = $valores / $contador;
                 echo "La media de los números introducidos es $media";
+                session_destroy();
             }
         }
         ?>
