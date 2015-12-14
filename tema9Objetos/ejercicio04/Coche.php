@@ -3,6 +3,9 @@
 include_once './Vehiculo.php';
 
 class Coche extends Vehiculo {
-    //put your code here
+
+    public function quemarRueda(){
+        echo "Estoy quemando las ruedas del coche.";
+    }
 }
 

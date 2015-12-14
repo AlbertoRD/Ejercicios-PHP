@@ -8,8 +8,13 @@ class Vehiculo {
 
     public function __construct() {
         $this->kmRecorridos = 0;
+        self::$vehiculosCreados++;
     }
 
+    public function anda($kilometros) {
+        $this->kmRecorridos += $kilometros;
+        self::$kilometrosTotales+=$kilometros;
+    }
 
     public static function getVehiculosCreados() {
         return self::$vehiculosCreados;
